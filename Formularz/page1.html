@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="progressBar">
+        <div id="languagesBar"></div>
+        <div id="nameBar"></div>
+        <div id="surnameBar"></div>
+        <div id="cityBar"></div>
+        <div id="postalBar"></div>
+        <div id="areaBar"></div>
+        <div id="mailBar"></div>
+        <div id="ipBar"></div>
+        <div id="urlBar"></div>
+        <div id="passwordBar"></div>
+    </div>
+    <div id="page1" >
+        <div class="topLabel">
+            <h1>Wybierz trzy języki programowania, których zamierzasz się uczyć</h1>
+        </div>
+        <div class="formDiv">
+            <form action="" name="form1"id="form1" class="form">
+                <div>
+                    <div id="dot0" class="dot"></div>
+                    <div class="label">C</div>
+                    <input type="checkbox" name="lang0" id="lang0" value="c">
+                </div>
+                <div>
+                    <div id="dot1" class="dot"></div>
+                    <div class="label">C++</div>
+                    <input type="checkbox" name="lang1" id="lang1" value="c++">
+                </div>
+                <div>
+                    <div id="dot2" class="dot"></div>
+                    <div class="label">Java</div>
+                    <input type="checkbox" name="lang2" id="lang2" value="java">
+                </div>
+                <div>
+                    <div id="dot3" class="dot"></div>
+                    <div class="label">Pearl</div>
+                    <input type="checkbox" name="lang3" id="lang3" value="pearl" >
+                </div>
+                <div>
+                    <div id="dot4" class="dot"></div>
+                    <div class="label">Delphi</div>
+                    <input type="checkbox" name="lang4" id="lang4" value="delphi">
+                </div>
+            </form>
+        </div>
+
+
+        <div class="bottomLabel">
+            <button id="back1">wstecz</button>
+            <button id="next1">następna</button>
+        </div>
+    </div>
+    <div id="page2">
+            <div class="topLabel">
+                <h1>Wypełnij dane osobowe (wszystkie dane są obowiązkowe)</h1>
+            </div>
+            <div class="formDiv">
+                <form action="" name="form2" id="form2" class="form">
+                    <div>
+                        <div id="nameDot" class="dot"></div>
+                        <div class="label">Imię</div>
+                        <input type="text" name="name" id="name" class="input" pattern="[A-ZĄĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{1,19}"required placeholder="Imię">
+                    </div>
+                    <div>
+                        <div id="surnameDot" class="dot"></div>
+                        <div class="label">Nazwisko</div>
+                        <input type="text" name="surname" id="surname" class="input" pattern="[A-ZĄĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{1,19}"required placeholder="Nazwisko">
+                    </div>
+                    <div>
+                        <div id="cityDot" class="dot"></div>
+                        <div class="label">Miasto</div>
+                        <input type="text" name="city" id="city"class="input" required pattern="[A-ZĄĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{1,19}" placeholder="Miasto">
+                    </div>
+                    <div>
+                        <div id="postalDot" class="dot"></div>
+                        <div class="label">Kod Pocztowy</div>
+                        <input type="text" name="postal" id="postal" maxlength="6" pattern="[0-9]{2}[\-]{1}[0-9]{3}" class="input" required placeholder="Kod Pocztowy">
+                    </div>
+                    <div>
+                        <div id="areaDot" class="dot"></div>
+                        <div class="label">Województwo</div>
+                        <select required id="area" name="area" class="input">
+                                <option selected="selected" class="hidden" value="none">wybierz...</option>
+                                <option value="Łódzkie">Łódzkie</option>
+                                <option value="Mazowieckie">Mazowieckie</option>
+                        </select> 
+                    </div>
+                </form>
+            </div>
+    
+    
+            <div class="bottomLabel">
+                <button id="back2">wstecz</button>
+                <button id="next2">następna</button>
+            </div>
+        </div>
+        <div id="page3">
+                <div class="topLabel">
+                    <h1>Wypełnij dane osobowe (wszystkie dane są obowiązkowe)</h1>
+                </div>
+                <div class="formDiv">
+                    <form action="" id="form3" class="form">
+                        <div>
+                            <div id="mailDot" class="dot"></div>
+                            <div class="label">Email</div>
+                            <input type="text" name="mail" id="mail" class="input" pattern="[A-Za-z0-9.!#$%&'*+-=?^_`{|}~]+@[A-Za-z0-9]{1,}([-]{1}[A-Za-z0-9]{1,}){0,1}(\.[A-Za-z0-9]{1,}([-]{1}[A-Za-z0-9]{1,}){0,1}){0,}$" placeholder="Email">
+                        </div>
+                        <div>
+                            <div id="IPDot" class="dot"></div>
+                            <div class="label">IP</div>
+                            <input type="text" name="IP" id="ip" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$" class="input" placeholder="IP">
+                        </div>
+                        <div>
+                            <div id="URLDot" class="dot"></div>
+                            <div class="label">URL</div>
+                            <input type="text"pattern="((https?)|(http?)|(ftp?)):\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" name="URL" id="url"class="input" placeholder="URL">
+                        </div>
+                        <div>
+                            <div id="passwordDot" class="dot"></div>
+                            <div class="label">Hasło</div>
+                            <input type="password" name="password" id="password" minlength="8" class="input" placeholder="password">
+                        </div>
+                        <div>
+                                <meter id="passwordMeter" class="meter" value="0" min="0" max="4" high="3" low="1" optimum="2"></meter>
+                        </div>
+                    </form>
+                    <button id="ok">OK</button>
+                </div>
+        
+        
+                <div class="bottomLabel">
+                    <button id="back3">wstecz</button>
+                    <button id="next3">następna</button>
+                </div>
+            </div>
+
+
+</body>
+
+</html>

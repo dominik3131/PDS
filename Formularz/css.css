@@ -1,0 +1,79 @@
+.hidden{
+    display: none;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+
+.progressBar>div{
+    display: inline-block;
+    border: 1px solid black;
+    min-width: 20px;
+    min-height: 20px;
+}
+.progressBar{
+    text-align: center;
+}
+
+.topLabel{
+    margin: 5px 0px 5px 0px;
+    border-top: 2px solid black;
+    border-bottom:2px solid black;
+    line-height: 20px;
+    text-align: center;
+    color:white;
+}
+.topLabel > h1{
+    background-color: red;
+    font-size: 20px;
+    margin:3px 0px 5px 0px;
+}
+.formDiv{
+    display: block;
+    text-align: center;
+}
+.form{
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    
+}
+.input{
+    min-width: 150px;
+}
+
+.form > div>div{
+    display: inline-block;
+}
+.meter{
+    position: relative;left:200px;bottom:22px;
+}
+.dot{
+    border: 1px solid black;
+    min-width: 16px;
+    min-height: 16px;
+    border-radius: 8px;
+    margin:3px 0px 0px 0px;
+}
+.country
+{
+    display:none;
+}
+.label{
+    line-height: 30px;
+    min-width: 100px;
+    text-align: left;
+}
+.bottomLabel{
+    margin-top: 5px;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom:2px solid black;
+}
+
+.bottomLabel > button{
+    margin:5px;
+}
