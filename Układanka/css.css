@@ -1,0 +1,53 @@
+#hide{
+    display: none;
+}
+body{
+    background-color: #2A3F42;
+}
+td{
+    background-color: #B7C22C;
+    border: 1px solid white;
+    padding:30px;
+}
+.on{
+    background-color: #22A8B5;
+}
+.unselectable{
+    background-color: white;
+}
+#heading{
+    background-color: #B7C22C;
+    text-align: center;
+}
+#clicks{
+    color: white;
+}
+#tableDiv{
+    width: 50%;
+    margin: 0 auto;
+    text-align:center;
+}
+#tab{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#startButtonDiv{
+    text-align: center;
+    margin: 0 auto;
+}
+#startButtonDiv > button{
+    min-width: 200px;
+    min-height: 60px;
+    margin:50px;
+}
+#tab{
+    padding: 5px;
+    background-color: white;
+    box-shadow: 5px 5px;
+}
+#clicks{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
