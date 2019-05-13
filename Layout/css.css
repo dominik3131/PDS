@@ -1,0 +1,98 @@
+body{
+    background-color: #5D5C61;
+    color: white;
+    text-align: center;
+	
+    
+}
+*{
+ min-height:100px;
+line-height:30px;
+}
+
+.mainHeader, .navigation, .mainSection, .mainAside, .mainFooter{
+    background: #557A95;
+    margin: 10px;
+    border-radius:10px;
+}
+
+.sectionHeader, .sectionArticle, .sectionFooter{
+    background: #777777;
+    margin:10px;
+    border-radius:10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+   .mainDiv{
+       float:none;
+   }
+   .secondDiv{
+       display: flex;
+       width: 100%;
+   }
+   .navigation{
+       float: left;
+       width: 300px;
+   }
+   .mainSection{
+       width: 100%;
+   }
+  }
+
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .mainDiv{
+        
+        display: flex;
+    }
+    .secondDiv{
+        width: 100%;
+        display: flex;
+    }
+    .navigation{
+        float: left;
+        width: 300px;
+    }
+    .mainAside{
+        float: right;
+        width: 300px;
+    }
+    .mainSection{
+        width: 100%;
+    }
+   }
+   @media only screen and (min-width: 1201px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mainDiv{
+        width:1170px;
+        display: flex;
+        margin:10px;
+    }
+    .mainHeader, .mainFooter{
+        width: 1170px;
+    }
+    .secondDiv{
+        width: 100%;
+        display: flex;
+    }
+    .navigation{
+        float: left;
+        width: 300px;
+    }
+    .mainAside{
+        float: right;
+        width: 300px;
+    }
+    .mainSection{
+        width: 100%;
+    }
+    .navigation{
+        margin-left:0px;
+    }
+    .mainAside{
+        margin-right: 0px;
+    }
+   }
