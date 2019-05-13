@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ng Sample</title>
+
+    <!-- Importuj jQuery -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- Importuj AngularJS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+
+    <!-- Importuj Booststrap -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Importuj kod aplikacji -->
+    <script type="text/javascript" src="sumApp.js"></script>
+</head>
+
+<body>
+    <h1>Sumowanko!</h1>
+    <!-- ten blok definiuje sekcję aplikacji userApp -->
+    <div ng-app="userApp">
+
+        <!-- Ten blok definiuje kontroler UserCtrl -->
+        <div ng-controller="UserCtrl">
+            <table class="table table-bordered">
+                <thead>
+                    <th ng-if="users.length >0">Operacja</th>
+                    <th>Nazwisko i imię</th>
+                    <th>Nr indeksu</th>
+                    <th>javascript</th>
+                    <th>jQuery</th>
+                    <th>PHP</th>
+                    <th>Suma</th>
+
+                </thead>
+                <!-- prezentacja zawartości modelu w każdym wierszu osobny obiekt użytkownika -->
+                <tbody ng-repeat="user in users">
+                    <!-- Szablon wyświetlania użytkownika -->
+                    <tr>
+                        <td><input type="button" class="btn btn-danger" ng-click="deleteUser(user);" value="Usuń" />
+                        <td contenteditable="true" ng-model="user.name">{{user.name}} </td>
+                        <td contenteditable="true" ng-model="user.index_number">{{user.index_number}}</td>
+                        <td contenteditable="true" ng-change="rowChanged()" ng-model="user.javascript">{{user.javascript}}</td>
+                        <td contenteditable="true" ng-change="rowChanged()" ng-model="user.jQuery">{{user.jQuery}}</td>
+                        <td contenteditable="true" ng-change="rowChanged()" ng-model="user.PHP">{{user.PHP}}</td>
+                        <td>{{user.sum}}</td>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr ng-model="summary">
+                        <td>Podsumowanie</td>
+                        <td></td>
+                        <td></td>
+                        <td >{{summary.javascript}}</td>
+                        <td>{{summary.jQuery}}</td>
+                        <td>{{summary.PHP}}</td>
+                        <td>{{summary.totalSum}}</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <input type="button" class="btn btn-primary" ng-click="addUser();" value="Dodaj osobę" />
+        </div> <!-- Koniec ng-controller -->
+    </div> <!-- Koniec ng-app -->
+</body>
+
+</html>

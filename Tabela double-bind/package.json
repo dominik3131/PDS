@@ -1,0 +1,17 @@
+{
+  "name": "4",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -o"
+  },
+  "author": "Dominik Rak 209443",
+  "license": "ISC",
+  "dependencies": {
+    "ecstatic": "git://github.com/jfhbrook/node-ecstatic.git#7538ac5fda216c6ecf2a3386051feaf11f6deb2d",
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
